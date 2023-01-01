@@ -3,85 +3,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
-       android:hint="Enter Address"
-        android:textSize="50dp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="600dp"
-        android:id="@+id/Address"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="180dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginBottom="400dp"
-        android:text="Pin Code"
-        android:textSize="30dp"
-        android:textColor="#8B000000"
-        android:id="@+id/PinCode"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginBottom="400dp"
-        android:hint="Enter Pin Code"
-        android:textSize="50dp"
-        android:id="@+id/EditPinCode"/>
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="360dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="660dp"
         android:layout_marginEnd="20dp"
+        android:text="Payment Mode"
+        android:textSize="30sp"
         android:id="@+id/PaymentMode"/>
-   <Button
-       android:layout_height="match_parent"
-       android:layout_width="match_parent"
-       app:layout_constraintLeft_toLeftOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       android:layout_marginTop="470dp"
-       android:layout_marginBottom="150dp"
-       android:id="@+id/GooglePay"
-       android:layout_marginStart="20dp"
-       android:layout_marginEnd="275dp"
-       />
     <Button
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="470dp"
-        android:layout_marginStart="145dp"
-        android:layout_marginBottom="150dp"
-        android:layout_marginEnd="135dp"
-        android:id="@+id/PhonePay"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="470dp"
-        android:layout_marginBottom="150dp"
-        android:layout_marginStart="285dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/pp"
+        android:backgroundTint="#8C0E"
+        android:textSize="20sp"
+        android:layout_marginBottom="550dp"
         android:layout_marginEnd="20dp"
-        android:id="@+id/COD"/>
+        android:id="@+id/PhonePay"/>
+   >
 
 
 

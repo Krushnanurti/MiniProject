@@ -43,15 +43,12 @@ public class QuickDelivery extends AppCompatActivity  {
         });
         Watches.setOnClickListener(view ->
         {
-            Intent WatchIntent=new Intent(QuickDelivery.this,WatchActivity.class);
-            WatchIntent.putExtra("watches",Watch);
-            startActivity(WatchIntent);
+           Toast.makeText(QuickDelivery.this,"Application in building process",Toast.LENGTH_LONG).show();
         });
         Shoes.setOnClickListener(view ->
         {
-            Intent shoeIntent=new Intent(QuickDelivery.this,ShoesActivity.class);
-            shoeIntent.putExtra("shoes",Shoe);
-            startActivity(shoeIntent);
+            Toast.makeText(QuickDelivery.this,"Application in building process",Toast.LENGTH_LONG).show();
+
         });
 
     }

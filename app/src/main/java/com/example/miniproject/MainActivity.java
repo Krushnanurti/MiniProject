@@ -25,13 +25,17 @@ Button Login,Register;
         Login=findViewById(R.id.Login);
         Register=findViewById(R.id.Register);
     }
+
     public void initListeners()
     {
-      Login.setOnClickListener(view -> {
-          Intent intent=new Intent(MainActivity.this,QuickDelivery.class);
-          intent.putExtra("Username",Username.getText().toString());
-          startActivity(intent);
-      });
+
+            Login.setOnClickListener(view -> {
+
+                Intent intent = new Intent(MainActivity.this, QuickDelivery.class);
+                intent.putExtra("Username", Username.getText().toString());
+                startActivity(intent);
+            });
+
 
     }
 }

@@ -3,4 +3,10 @@
     <string name="mobiles">Mobiles</string>
     <string name="watches">Watches</string>
     <string name="shoes">Shoes</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="enter_pin_code">Enter Pin Code</string>
+    <string name="gp">GP</string>
+    <string name="pp">PP</string>
+    <string name="cod">COD</string>
 </resources>

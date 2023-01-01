@@ -14,9 +14,9 @@ import androidx.annotation.NonNull;
 
 
 public class ProductPurchaseDialog extends Dialog {
-    EditText Address;
-    TextView PinCode,PaymentMode;
-    Button PhonePay,COD,GooglePay;
+
+    TextView PaymentMode;
+    Button PhonePay,GooglePay;
 
     public ProductPurchaseDialog(@NonNull Context context) {
         super(context);
@@ -26,22 +26,15 @@ public class ProductPurchaseDialog extends Dialog {
     }
     public void initViews()
     {
-        Address=findViewById(R.id.Address);
-        PinCode=findViewById(R.id.EditPinCode);
-        GooglePay=findViewById(R.id.GooglePay);
         PhonePay=findViewById(R.id.PhonePay);
-        COD=findViewById(R.id.COD);
         PaymentMode=findViewById(R.id.PaymentMode);
 
     }
     public void initListener()
     {
-        GooglePay.setOnClickListener(view -> {Toast.makeText(view.getContext(),"Google Pay Done",Toast.LENGTH_LONG).show();});
+
         PhonePay.setOnClickListener(view ->  { Toast.makeText(view.getContext(),"Phone Pay Done",Toast.LENGTH_LONG).show();});
-        COD.setOnClickListener(view ->
-        {
-            Toast.makeText(view.getContext(),"COD Done",Toast.LENGTH_LONG).show();
-        });
+
     }
 
 }
