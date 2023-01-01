@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginLeft="90dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginRight="90dp"
+    android:hint="Enter Username"
+    android:id="@+id/Username"
+    android:textColorHint="#131313"
+    android:inputType="text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Username"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:textColorHint="#131313"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/Password"
+        android:hint="Enter Password"
+        android:inputType="text"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#F80303"
+        android:hint="Login"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/Password"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:id="@+id/Login"
+        android:textColorHint="@color/white"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Login"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:backgroundTint="#F80303"
+        android:hint="Register"
+        android:textColorHint="@color/white"
+        android:id="@+id/Register"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
